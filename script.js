@@ -108,7 +108,7 @@ function processShopifyData(raw) {
                         variation1 = parts[2] ?? '';
                         variation2 = isNaN(parts[3]) ? (parts[3] === 'C' ? 'Cable' : 'Snake') : parts[3];
 
-                        if (['0096', '0132', '0135', '0173', '0188', '0198', '0294'].includes(parts[1])) {
+                        if (['0096', '0132', '0135', '0173', '0188', '0198', '0294', '0306'].includes(parts[1])) {
                             variation3 = row[3];
                         } else {
                             variation3 = parts[4] ?? '';
@@ -178,7 +178,7 @@ function processLazadaData(raw) {
                         variation1 = parts[2] ?? '';
                         variation2 = isNaN(parts[3]) ? (parts[3] === 'C' ? 'Cable' : 'Snake') : parts[3];
 
-                        if (['0096', '0132', '0135', '0173', '0188', '0198', '0294'].includes(parts[1])) {
+                        if (['0096', '0132', '0135', '0173', '0188', '0198', '0294', '0306'].includes(parts[1])) {
                             variation3 = row[3];
                         } else {
                             variation3 = parts[4] ?? '';
